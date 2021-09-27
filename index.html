@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fidel Block</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo"  >Fidel Block</td>
+                <td id="navigation">
+                    <a href="#work">work</a>
+                    <a href="#bio">about</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Hello,  my name is Fidel !</h1>
+                <p> and I am front end developer.</p>
+                
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" target="_blank" href="https://www.facebook.com/fidel.block.1/"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" target="_blank" href="https://www.linkedin.com/in/fidel-block/"><i class="fab fa-linkedin"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" target="_blank" href="https://github.com/fidelblock"><i class="fab fa-github"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <img id="rightImage" src=./img/foto.jpg>
+            </td>
+        </tr>
+    </table>
+    
+    <div id="work">
+        <h1>work</h1>
+        <p>
+            These are some projects that I've developed using HTML, CSS, Javascript, jQuery, Bootstrap, Node.js, Express, MongoDB.
+        </p>
+        <p>
+            Feel free to check the repositories in my <a target="_blank" href="https://github.com/fidelblock">github</a> profile. 
+        </p>
+        <div id="photos">            
+            <img onclick="magnify($(this).attr('src'))" src="./img/screencapture-fidelblock-github-io-phoneshop-2021-06-18-15_59_31.png">
+            <img onclick="magnify($(this).attr('src'))" src="./img/controldestock.png">
+            <img onclick="magnify($(this).attr('src'))" src="./img/screencapture-learningnodes-2021-09-27-18_44_47.png">
+            <img onclick="magnify($(this).attr('src'))" src="./img/gastosemanal.png">
+            <img onclick="magnify($(this).attr('src'))" src="./img/screencapture-127-0-0-1-5501-public-index-html-2021-09-27-19_32_56.png">
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+            I have experience with HTML, CSS, Javascript, jQuery, Bootstrap, Sass, MySQL, Node.js, Express, MongoDB. 
+        </p>
+        <p>
+            Also, i speak French, English and native Spanish.
+        </p>
+        
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+        <p>let's get in touch!</p>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; fidelblock1@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Cruz Alta,<br>
+                                        Argentina
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" target="_blank" href="https://www.facebook.com/fidel.block.1/"><i class="fab fa-facebook"></i></a>
+                                        <a class="social" target="_blank" href="https://github.com/fidelblock"><i class="fab fa-github"></i></a>
+                                        <a class="social" target="_blank" href="https://www.linkedin.com/in/fidel-block/"><i class="fab fa-linkedin"></i></a>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one"> <a style="text-decoration: none;"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fidelblock1@gmail.com" target="_blank">send</a></button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        © 2021 - Made by <a  target="_blank" href="https://www.linkedin.com/in/fidel-block/">Fidel Block.</a>
+    </div>
+       <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
